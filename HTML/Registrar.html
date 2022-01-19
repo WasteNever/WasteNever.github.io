@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Waste Never</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../CSS/Reg.css" rel="stylesheet" />
+    <style>
+        input, select, textarea {
+            font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+            input[type=submit], input[type=reset] {
+                padding: 0.375rem0.75rem;
+                font-size: 1rem;
+            }
+
+            select, input[type=text], input[type=password] {
+                font-size: 1rem;
+                border: 1pxsolid#ced4da;
+                border-radius: 0.25rem;
+                width: 100%;
+            }
+
+        fieldset {
+            border: 1pxsolid#ced4da;
+            border-radius: 0.25rem;
+        }
+
+        textarea {
+            width: 100%;
+            font-size: 1rem;
+            border: 1pxsolid#ced4da;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid" style="width:85%">
+            <a class="navbar-brand" href="Home.html">
+                <img src="../Images/52dfbb4a9250f6074a27f9fa54e8450a.png" class="logo" aria-current="page" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Waste Never</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Consumidor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Comerciantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Instituições</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li><a href="Login.html"><button class="btn btn-outline my-2 my-sm-0">Login &rarr;</button></a></li>
+                    <li style="margin-left:12px"><a href="Registrar.html"><button class="btn btn-outline my-2 my-sm-0">Registrar &rarr;</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin:auto; width:860px; margin-top:150px">
+        <h1 style="text-align:center; color:orange; padding-top:10px"><b>Registo</b></h1>
+        <form name="PersonData" method="post">
+            <input type="hidden" name="FormName" value="UserForm" />
+            <fieldset>
+                <div class="row my-5">
+                    <div class="col-2">
+                        <label>Utilizador:</label>
+                    </div>
+                    <div class="col-10">
+                        <select name="Curso" id="Curso">
+                            <option value="1" selected>Consumidor</option>
+                            <option value="2">Comerciante</option>
+                            <option value="3">Instituição de caridade</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-2">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" name="Name" value="" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-2">
+                        <label>Nome:</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" name="Name" value="" placeholder="Nome" />
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-2">
+                        <label>Palavra-passe:</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="password" name="Name" value="" placeholder="Palavra-Passe" />
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-2">
+                        <label>Confirmar:</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="password" name="Name" value="" placeholder="Confrimar palavra-passe" />
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <fieldset>
+                        <input type="checkbox" name="vehicle" value="Termos "> Ao clicar, está de acordo com os <a href="http:xxxxxxxxxx" style="color:orange">Termos e Condições</a><br />
+                    </fieldset>
+                    <button class="btn btn-outline-warning" style="margin-top:5px"> Criar &rarr;</i></button>
+                </div>
+                <div style="text-align:center; margin-top:10px">
+                    <u><a href="Login.html"> Já possui conta? Entre aqui</a></u>
+                </div>
+            </fieldset>
+        </form>
+        <script src="../Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
