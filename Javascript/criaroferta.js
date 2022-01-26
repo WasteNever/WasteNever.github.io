@@ -4,10 +4,13 @@ $('#TipoUtilizador').change(function () {
     if (this.value == "Consumer") {
         $("#PriceOn").addClass("d-block")
         $("#PriceOn").removeClass("d-none")
+        $("#PriceOff").addClass("d-block")
+        $("#PriceOff").removeClass("d-none")
     } else {
         $("#PriceOn").addClass("d-none")
         $("#PriceOn").removeClass("d-block")
-
+        $("#PriceOff").addClass("d-none")
+        $("#PriceOff").removeClass("d-block")
     }
 });
 
