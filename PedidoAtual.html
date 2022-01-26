@@ -50,7 +50,7 @@
                     <tr>
                         <th width="1000" style="border: 1px solid black; ">Item</th>
                         <th width="200" style="border: 1px solid black; text-align:center ">Qtde</th>
-                        <th width="200"style=" border: 1px solid black; text-align:center ">Preço</th>
+                        <th width="200" style=" border: 1px solid black; text-align:center ">Preço</th>
                     </tr>
                     <tr>
                         <td style=" border: 1px solid black;">Baguete</td>
@@ -58,7 +58,7 @@
                         <td style=" border: 1px solid black; text-align: center ">0.20€</td>
                     </tr>
                     <tr style=" border: 1px solid black; ">
-                        <th colspan="3" >Estabelecimento: Padaria Belo Pão</th>
+                        <th colspan="3">Estabelecimento: Padaria Belo Pão</th>
                     </tr>
                     <tr>
                         <th colspan="2"></th>
@@ -68,6 +68,16 @@
             </div>
             <div class="justify-content-center text-center" style="margin-top:4%">
                 <h2>O seu pedido irá evitar o desperdício de: 0.5kg de comida.</h2>
+                <div class="text-center" style="text-align:center">
+                    <input type="checkbox" id="Donation" value="">    Este pedido é para doar?<br />
+                    <div class="row">
+                        <select name="Institutions" id="Institutions" class="d-none">
+                            <option value="Charity1" selected>Instituição de caridade 1</option>
+                            <option value="Charity2">Instituição de caridade 2</option>
+                            <option value="Charity">Instituição de caridade 3</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-6">
                         <a href="mainmenuConsumer.html" class="btn btn-outline my-2 my-sm-0 float-end">Adicionar mais produtos</a>
@@ -88,6 +98,20 @@
         </div>
     </nav>
     <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#Donation').change(function () {
+                if (this.checked) {
+                    $("#Institutions").addClass("d-block")
+                    $("#Institutions").removeClass("d-none ")
+                } else {
+                    $("#Institutions").removeClass("d-block")
+                    $("#Institutions").addClass("d-none ")
+                }
+            });
+        });
 
+    </script>
 </body>
 </html>
