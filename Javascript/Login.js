@@ -3,7 +3,7 @@
     "ComercialEmailtest@gmail.com": [{ "Password": "ComercialPassword", "TypeOfAccount": "Comercial", "Nome": "ComercialName", "Dono": "NomedoDono", "Local": "Rua do Comerciante" }],
     "CharityEmailtest@gmail.com": [{ "Password": "CharityPassword", "TypeOfAccount": "Charity", "Nome": "CharityName", "Dono": "NomedoDono", "Local": "Rua da Charity" }]
 }
-
+console.log(CurrentAccounts)
 $('#Submit').click(function () {
     ver = true
     if (($.trim($("#Email").val())) == "") {
